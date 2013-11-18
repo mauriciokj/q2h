@@ -1,6 +1,7 @@
 # encoding: UTF-8
 require 'sinatra'
 require 'find'
+set :port, 4700
 
 configure do
   set :public_folder, Proc.new { File.join(root, "static") }
