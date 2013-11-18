@@ -16,7 +16,11 @@
 	</div>
 </form>  
 
-<pre>
+<button id="copy-button" data-clipboard-text="fe_text" title="Clique para copiar.">Copiar</button>
+
+<script src="/vendor/ZeroClipboard.js"></script>
+  <script src="/vendor/main.js"></script>
+<pre id='fe_text'>
 	<%= @resultado %>
 </pre>
 
