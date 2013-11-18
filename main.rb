@@ -2,6 +2,9 @@
 require 'sinatra'
 require 'find'
 set :port, 4700
+set :bind, '0.0.0.0'
+set :environment, :production
+
 
 configure do
   set :public_folder, Proc.new { File.join(root, "static") }
