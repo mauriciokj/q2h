@@ -1,0 +1,35 @@
+
+<h1 class='text-info'>Q2H - Query To Hash</h1>
+<form action="/query_to_hash" method="post">  
+	<div class="row">
+		<div >
+			<form method="post" action="/query_to_hash" class="form-inline" >
+				<ul>
+					<textarea  rows='10' class='query' name="query"  type="text"  placeholder="Query" ></textarea>
+				</ul>
+				<ul>
+
+					<p>
+						<button type="submit" class="btn btn-primary"> 
+							<i class="icon-search icon-white"></i>
+							Q2H!
+						</button>
+						<img id='spinner' src="/vendor/bootstrap/img/spinner-dots.gif" alt="spinner" height="21" width="21" style='display:none'> 
+
+
+						
+					</p>
+				</ul>
+			</form>
+		</div>
+	</div>
+</form>  
+<script>
+
+$(function(){
+	$('button').click(function() {
+		$('#spinner').show();
+	});
+});
+</script>
+
