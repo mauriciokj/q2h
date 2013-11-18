@@ -24,6 +24,7 @@ end
 post '/query_to_hash' do
   @query = params[:query]
   @resultado = query_to_hash(@query)
+  @resultado = @resultado.to_s.gsub('",','",<br>')
 
 
 erb :resultado

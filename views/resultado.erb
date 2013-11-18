@@ -15,9 +15,11 @@
 		</div>
 	</div>
 </form>  
-<h2 class='text-success'><%= @resultado %></h2>
 
-</h2>
+<pre>
+	<%= @resultado %>
+</pre>
+
 <script>
 
 $(function(){
@@ -25,6 +27,5 @@ $(function(){
 		$('#spinner').show();
 	});
 
-	window.prompt ("Copy to clipboard: Ctrl+C, Enter", $(".text-success").text());
 });
 </script>
