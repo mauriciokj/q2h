@@ -3,5 +3,5 @@ var clip = new ZeroClipboard( document.getElementById("copy-button"), {
 } );
 
 clip.on( 'dataRequested', function (client, args) {
-  client.setText( $("#fe_text").text() );
+  client.setText( $("#fe_text").html().replace(/<br>/g,'\n').trim().replace(/&gt;/g,'>') );
 });
